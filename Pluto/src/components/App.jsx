@@ -5,7 +5,7 @@ import { app, auth } from '../firebase.js'
 
 import { useAuthState } from 'react-firebase-hooks/auth'
 
-import Home from './Home.jsx'
+import Home from '../pages/Home.jsx'
 import Loginform from './Loginform.jsx'
 import Signupform from './Signupform.jsx'
 
