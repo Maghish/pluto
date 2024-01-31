@@ -6,9 +6,8 @@ import { app, auth } from '../firebase.js'
 import { useAuthState } from 'react-firebase-hooks/auth'
 
 import Home from '../pages/Home.jsx'
-import Loginform from './Loginform.jsx'
-import Signupform from './Signupform.jsx'
-
+import Login from '../pages/Login.jsx'
+import Signup from '../pages/Signup.jsx'
  
 
 function DecideCurrentPage() {
@@ -34,11 +33,11 @@ export default function App() {
                 },
                 {
                     path: 'login',
-                    element: <Loginform />,
+                    element: <Login />,
                 }, 
                 {
                     path: 'signup',
-                    element: <Signupform />,
+                    element: <Signup />,
                 }
             ]
         }
